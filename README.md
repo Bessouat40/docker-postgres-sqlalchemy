@@ -1,2 +1,5 @@
-# docker-sql-database
-Postgresql database connect to sqlalchemy.
+# Connection between Postgres database and python (SQLAlchemy)
+
+## USAGE
+
+- `docker-compose build && docker-compose up -d`
