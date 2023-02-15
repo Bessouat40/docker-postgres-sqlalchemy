@@ -1,5 +1,7 @@
 # Connection between Postgres database and python (SQLAlchemy)
 
+This project is an exemple of how you can deploy with Docker a PostGreSQL database and access it with python.
+
 ## Technologies
 
 * `Docker` in order to dockerize our code. This make easier the deployment of our services
