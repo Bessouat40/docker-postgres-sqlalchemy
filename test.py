@@ -1,11 +1,12 @@
 from sqlalchemy import create_engine, insert, text
 import time
 
-time.sleep(10)
+time.sleep(5)
 
-engine = create_engine("postgresql+psycopg2://postgres:postgres@db:5432/medicalDB")
+engine = create_engine("postgresql+psycopg2://postgres:postgres@db:5432/DB")
 conn = engine.connect()
-query="INSERT INTO  medicalTable (nom_patient, diagnostic)  VALUES(%s,%s)"
-my_data=[('Michel', 'normal'),
-        ('Renaud', 'normal'),]
-conn.execute(query,my_data)
+query=text("INSERT INTO identity (_name, surname) VALUES ('Michel', 'Palefrois'), ('Renaud', 'Bertop');")
+conn.execute(query)
+conn.commit()
+
+print('done')

@@ -1,5 +1,5 @@
-CREATE TABLE medicalTable
+CREATE TABLE identity
 (
-    nom_patient VARCHAR(255),
-    diagnostic VARCHAR(255)
+    _name VARCHAR(255),
+    surname VARCHAR(255)
 );
