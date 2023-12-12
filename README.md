@@ -18,4 +18,11 @@ We deploy our PostGreSQL database. It can be visualize with some tools like DbVi
 
 We run our services with this command :
 
-`docker-compose build && docker-compose up -d`
+`docker-compose build && docker-compose up db -d`
+
+Wait for the database to be available and ready to accept connections...
+
+Then :
+
+`docker-compose up api`
+
