@@ -24,5 +24,5 @@ Wait for the database to be available and ready to accept connections...
 
 Then :
 
-`docker-compose up api`
+`docker-compose up api` # need to add a healthcheck
 
